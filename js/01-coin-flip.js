@@ -1,12 +1,10 @@
-let firstNumber = Number(prompt("Select a number"));
-let secondNumber = Number(prompt("Select a second number"));
-
-if (isNaN(firstNumber) || isNaN(secondNumber)){
-    document.write(`<p>Please enter two valid numbers.</p>`)
-} else if (firstNumber === secondNumber){
-    document.write(`<p>Both numbers are equal.</p>`);
-} else if (firstNumber > secondNumber){
-    document.write(`<p>${firstNumber} is larger.`);
-} else {
-    document.write(`<p>${secondNumber} is larger.`);
+let coinFlip;
+let times = parseInt(prompt("How many times?"));
+for (i = 0; i <= times; i++){
+    flip = Math.round(Math.random());
+    if (flip === 0){
+        console.log("Heads");
+    } else if (flip === 1) {
+        console.log("Tails");
+    }
 }
